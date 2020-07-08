@@ -3,7 +3,7 @@ pre code {
   color: black;
   background-color: #f1f1f1;
   padding: 4px;
-  border-color: #959595;
+  border-color: #9e9e9e;
   border-radius: 6px;
   border-style: solid;
   border-width: 1px;
@@ -18,12 +18,11 @@ pre code {
 	margin: auto;
 	padding: 10px;
 	width: 50%;
-  height: 50%;
+
 }
 
 .video_wrapper {
 position: relative;
-padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
 }
 
 iframe{
@@ -32,5 +31,23 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
+}
+
+.auto-resizable-iframe {
+  max-width: 420px;
+  margin: 0px auto;
+}
+
+.auto-resizable-iframe > div {
+  position: relative;
+  height: 0px;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
 

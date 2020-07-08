@@ -13,6 +13,11 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
         <link href="css/viewer.css" rel="stylesheet" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+        />
+        <script src="js/wow.min.js"></script>
     </head>
     <style>
         .grid-container {
@@ -62,7 +67,6 @@
                 <a class="navbar-brand js-scroll-trigger" href="./index">Srikant Vasudevan</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Navigation</button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index#about">About Me</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index#projects">Featured Projects</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index#signup">Contact</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./proj">Portfolio</a></li>
@@ -75,7 +79,7 @@
         <header class="masthead" style="background-image: url('./assets/portfolio-bg.png'); height: 50vh">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase"><?php echo $name; ?></h1>
+                    <h1 class="mx-auto my-0 text-uppercase animate__animated animate__fadeInDown animate__delay-.5s"><?php echo $name; ?></h1>
                 </div>
             </div>
         </header>
@@ -118,7 +122,7 @@
 	    			switch (response.status){
 	    				case 200: 
 	    					var template=await response.text();
-	    					document.getElementById("content").innerHTML = marked(template);
+	    					document.getElementById("content").innerHTML = marked(template) + '<br><br><p>To view the project in github, visit this <a target="_blank" href= <?php echo $link; ?>>link</a></p>';
 	    					break; 
 	    				case 404:
 	    					document.getElementById("content").innerHTML = "Unable to display README";
@@ -134,12 +138,16 @@
 				echo $embedLink;
 			?>
 			<script>
-				document.getElementById("content").innerHTML = '<div class="video_wrapper"><iframe src= <?php echo $embedLink; ?> ></iframe></div>'
+				document.getElementById("content").innerHTML = '<div class="video_wrapper"><iframe style="width: 100%; height: 450px"src= <?php echo $embedLink; ?>></iframe><br><br><p>To view the video on youtube, visit this <a target="_blank" href= <?php echo $link; ?>>link</a></p></div>'
 			</script>
 			<?php
 				}
 				else{
-					echo "Can't display project";
+			?>
+                <script>
+                    document.getElementById("content").innerHTML = "Can't display this project"
+                </script>
+            <?php
                 }
 			?>
     </body>
