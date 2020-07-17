@@ -1,4 +1,4 @@
-# My-Website
+# My Website
 Repository with the code for my website, hosted [here](http://srikantv.com)
 
 ## Dependencies
