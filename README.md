@@ -31,3 +31,9 @@ This is the relational database management system that I used for this project. 
 - [Bootstrap](https://getbootstrap.com)
 
 This is a CSS framework I used to help me style my website. I heavily modified parts of the css to fit the needs of my website.
+
+## Login
+
+The login for this website is to allow for the admin (me) to upload images, projects and other data to the sql database/the server to display on the website without having to use the ftp everytime.
+
+This feature will be expanded to gain larger control over the website through a GUI interface.
