@@ -1,0 +1,6 @@
+.btn-primary {
+	transition-duration: 0.4s;
+}
+.btn-primary:hover {
+	box-shadow: 2px 2px #8a8a8a;
+}

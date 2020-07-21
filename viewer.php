@@ -71,11 +71,12 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index#signup">Contact</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./proj">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" target="_blank" href="https://github.com/treecant">Github</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" target="_blank" href="./login">Admin Login</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
+
         <header class="masthead" style="background-image: url('./assets/portfolio-bg.png'); height: 50vh">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
@@ -84,12 +85,12 @@
             </div>
         </header>
 
-        <!-- Bootstrap core JS-->
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
+
         <script src="js/scripts.js"></script>
 
             <div class="grid-container">
