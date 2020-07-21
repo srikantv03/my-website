@@ -20,15 +20,7 @@
         <script src="js/wow.min.js"></script>
     </head>
     <style>
-        .grid-container {
-            display: grid;
-            margin: auto;
-        }
-        .grid-container > a{
-            padding:1em;
 
-        }
-        
         body{
             font-family: 'Lato', sans-serif;
         }
@@ -93,18 +85,18 @@
 
         <script src="js/scripts.js"></script>
 
-            <div class="grid-container">
+
             	<div style="padding: 20px">
                 <div id="content"></div>
             	</div>
-            </div>
+
 
             <footer class="footer bg-black small text-center text-white-50"><div class="container">Srikant Vasudevan 2020</div></footer>
             <?php
 				if(strpos($link, '.pdf') !== false){
 			?>
     		<script>
-    			document.getElementById("content").innerHTML = '<iframe src= <?php echo $link ?> width="100%" height="400px"></iframe>';
+    			document.getElementById("content").innerHTML = '<iframe src= <?php echo $link ?>  class="video_frame" ></iframe>';
     		</script>
     		<?php
 				} 
