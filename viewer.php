@@ -96,7 +96,7 @@
 				if(strpos($link, '.pdf') !== false){
 			?>
     		<script>
-    			document.getElementById("content").innerHTML = '<iframe src= <?php echo $link ?>  class="video_frame" ></iframe>';
+    			document.getElementById("content").innerHTML = '<iframe src= <?php echo $link ?>  class="pdf_frame" ></iframe>';
     		</script>
     		<?php
 				} 
@@ -128,10 +128,9 @@
 				elseif (strpos($link, 'https://www.youtube.com') !== false){
 				$relink = explode("https://www.youtube.com/watch?v=", $link, 2);
 				$embedLink = "https://youtube.com/embed/" . $relink[1];
-				echo $embedLink;
 			?>
 			<script>
-				document.getElementById("content").innerHTML = '<div class="video_wrapper"><iframe style="width: 100%; height: 450px"src= <?php echo $embedLink; ?>></iframe><br><br><p>To view the video on youtube, visit this <a target="_blank" href= <?php echo $link; ?>>link</a></p></div>'
+				document.getElementById("content").innerHTML = '<div class="video_wrapper"><iframe class="video_frame" src= <?php echo $embedLink; ?>></iframe><br><br><p>To view the video on youtube, visit this <a target="_blank" href= <?php echo $link; ?>>link</a></p></div>'
 			</script>
 			<?php
 				}

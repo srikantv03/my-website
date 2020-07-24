@@ -52,22 +52,50 @@ height: 100%;
 }
 
 @media (min-width: 480px){
-    .video_frame {
+    .pdf_frame {
       height: 312px;
+    }
+    .video_frame {
+      height: 180px;
+    }
+}
+@media (min-width: 620px){
+    .pdf_frame {
+      height: 468px;
+    }
+    .video_frame {
+      height: 270px;
     }
 }
 @media (min-width: 960px){
-    .video_frame {
+    .pdf_frame {
       height: 624px;
+    }
+    .video_frame {
+      height: 360px;
+    }
+}
+@media (min-width: 1200px){
+    .pdf_frame {
+      height: 780px;
+    }
+    .video_frame {
+      height: 450px;
     }
 }
 @media (min-width: 1440px){
-    .video_frame {
+    .pdf_frame {
       height: 936px;
+    }
+    .video_frame {
+      height: 540;
     }
 }
 @media (min-width: 1920px){
-    .video_frame {
+    .pdf_frame {
       height: 1248px;
+    }
+    .video_frame {
+      height: 720;
     }
 }
