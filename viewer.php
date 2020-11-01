@@ -106,7 +106,7 @@
 					$readmeLink = "https://raw.githubusercontent.com" . $relink[1] . "/master/README.md";
 			?>
 			<script>
-			var link = <?php echo json_encode($readmeLink); ?>;
+					var link = <?php echo json_encode($readmeLink); ?>;
 			</script>
     		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     		<script> 
