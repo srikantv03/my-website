@@ -40,7 +40,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index#signup">Contact</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./proj">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" target="_blank" href="https://github.com/treecant">Github</a></li> 
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" target="_blank" href="./login">Admin Login</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./login">Admin Login</a></li>
                   </ul>
                 </div>
             </div>
