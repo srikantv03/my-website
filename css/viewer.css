@@ -99,3 +99,22 @@ height: 100%;
       height: 720;
     }
 }
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 500vh;
+  background: #000;
+}
+
+canvas {
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100vw;
+  max-height: 100vh;
+}
