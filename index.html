@@ -25,6 +25,22 @@
         body{
             font-family: 'Lato', sans-serif;
         }
+        canvas {
+          padding: 0;
+          margin: auto;
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+        .image-detail-canvas {
+          -moz-user-select: none;
+          -webkit-user-select: none;
+          max-width: 100% !important;
+          max-height: 100% !important;
+        }
     </style>
     <body id="page-top">
     	<script>
@@ -57,8 +73,9 @@
             <div class="container">
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                     <div class="col-lg-6">
-                        <canvas id="resume-canvas" style="width: 100%"/>
+                        <canvas id="taskit" style="width: 100%"/>
                     </div>
+                    <script src="taskitScroll.js"></script>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -75,9 +92,9 @@
                 </div>
                 <div class="row justify-content-center no-gutters">
                     <div class="col-lg-6">
-                        <canvas id="resume-canvas" style="width: 100%"/>
+                            <canvas id="hydantoin" style="width: 100%"/>
                     </div>
-                    <script src="scroll.js"></script>
+                    <script src="hydantoinScroll.js"></script>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">

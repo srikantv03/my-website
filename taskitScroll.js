@@ -1,13 +1,13 @@
 const html = document.documentElement;
-const canvas = document.getElementById("resume-canvas");
+const canvas = document.getElementById("taskit");
 const context = canvas.getContext("2d");
 
 const frameCount = 100;
 const currentFrame = index => (
-  `http://www.srikantv.com/assets/HydantoinFrames/hydantoinFrames${index.toString().padStart(3, '0')}.jpg`
+  `http://www.srikantv.com/assets/TaskitFrames/taskitFrames${index.toString().padStart(3, '0')}.jpg`
 )
 
-const preloadImages = () => {
+const preloadImages1 = () => {
   for (let i = 1; i < frameCount; i++) {
     const img = new Image();
     img.src = currentFrame(i);
@@ -16,8 +16,8 @@ const preloadImages = () => {
 
 const img = new Image()
 img.src = currentFrame(1);
-canvas.width=1920;
-canvas.height=1080;
+canvas.width=1500;
+canvas.height=1154;
 img.onload=function(){
   context.drawImage(img, 0, 0);
 }
@@ -40,4 +40,4 @@ window.addEventListener('scroll', () => {
   requestAnimationFrame(() => updateImage(frameIndex + 1))
 });
 
-preloadImages();
+preloadImages1();
