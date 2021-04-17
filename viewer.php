@@ -47,7 +47,7 @@
             }
 
             $getresult = $conn -> query("SELECT projname, description, imgpath, link FROM projects WHERE id = $idNum");
-           	$num = mysqli_fetch_assoc($getresult);
+            $num = mysqli_fetch_assoc($getresult);
             $name = $num["projname"];
             $des = $num["description"];
             $path = $num["imgpath"];
@@ -86,61 +86,61 @@
         <script src="js/scripts.js"></script>
 
 
-            	<div style="padding: 20px">
-                <div id="content"></div>
-            	</div>
+                <div style="background-color: white; padding: 20px">
+                    <div id="content"></div>
+                </div>
 
 
             <footer class="footer bg-black small text-center text-white-50"><div class="container">Srikant Vasudevan 2020</div></footer>
             <?php
-				if(strpos($link, '.pdf') !== false){
-			?>
-    		<script>
-    			document.getElementById("content").innerHTML = '<iframe src= <?php echo $link ?>  class="pdf_frame" ></iframe>';
-    		</script>
-    		<?php
-				} 
+                if(strpos($link, '.pdf') !== false){
+            ?>
+            <script>
+                document.getElementById("content").innerHTML = '<iframe src= <?php echo $link ?>  class="pdf_frame" ></iframe>';
+            </script>
+            <?php
+                } 
 
-				elseif (strpos($link, 'https://github.com') !== false){
-					$relink = explode("https://github.com", $link, 2);
-					$readmeLink = "https://raw.githubusercontent.com" . $relink[1] . "/master/README.md";
-			?>
-			<script>
-					var link = <?php echo json_encode($readmeLink); ?>;
-			</script>
-    		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    		<script> 
-	    		(async ()=>{
-	    			var response=await fetch(link);
-	    			switch (response.status){
-	    				case 200: 
-	    					var template=await response.text();
-	    					document.getElementById("content").innerHTML = marked(template) + '<br><br><p>To view the project in github, visit this <a target="_blank" href= <?php echo $link; ?>>link</a></p>';
-	    					break; 
-	    				case 404:
-	    					document.getElementById("content").innerHTML = "Unable to display README";
-	    					break;
-	    			}
-	    		})();
-    		</script>
-    		<?php
-				} 
-				elseif (strpos($link, 'https://www.youtube.com') !== false){
-				$relink = explode("https://www.youtube.com/watch?v=", $link, 2);
-				$embedLink = "https://youtube.com/embed/" . $relink[1];
-			?>
-			<script>
-				document.getElementById("content").innerHTML = '<div class="video_wrapper"><iframe class="video_frame" src= <?php echo $embedLink; ?>></iframe><br><br><p>To view the video on youtube, visit this <a target="_blank" href= <?php echo $link; ?>>link</a></p></div>'
-			</script>
-			<?php
-				}
-				else{
-			?>
+                elseif (strpos($link, 'https://github.com') !== false){
+                    $relink = explode("https://github.com", $link, 2);
+                    $readmeLink = "https://raw.githubusercontent.com" . $relink[1] . "/master/README.md";
+            ?>
+            <script>
+                    var link = <?php echo json_encode($readmeLink); ?>;
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+            <script> 
+                (async ()=>{
+                    var response=await fetch(link);
+                    switch (response.status){
+                        case 200: 
+                            var template=await response.text();
+                            document.getElementById("content").innerHTML = marked(template) + '<br><br><p>To view the project in github, visit this <a target="_blank" href= <?php echo $link; ?>>link</a></p>';
+                            break; 
+                        case 404:
+                            document.getElementById("content").innerHTML = "Unable to display README";
+                            break;
+                    }
+                })();
+            </script>
+            <?php
+                } 
+                elseif (strpos($link, 'https://www.youtube.com') !== false){
+                $relink = explode("https://www.youtube.com/watch?v=", $link, 2);
+                $embedLink = "https://youtube.com/embed/" . $relink[1];
+            ?>
+            <script>
+                document.getElementById("content").innerHTML = '<div class="video_wrapper"><iframe class="video_frame" src= <?php echo $embedLink; ?>></iframe><br><br><p>To view the video on youtube, visit this <a target="_blank" href= <?php echo $link; ?>>link</a></p></div>'
+            </script>
+            <?php
+                }
+                else{
+            ?>
                 <script>
                     document.getElementById("content").innerHTML = "Can't display this project"
                 </script>
             <?php
                 }
-			?>
+            ?>
     </body>
 </html>

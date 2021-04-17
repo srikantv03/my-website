@@ -7,104 +7,22 @@
         <meta name="author" content="" />
         <title>Srikant Vasudevan</title>
         <link rel="icon" type="image/x-icon" href="icons/favicon.png" />
-
+        <link href="./css/main.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
 
         <link href="css/styles.css" rel="stylesheet" />
+
         <link
     	rel="stylesheet"
     	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   		/>
 		<script src="js/wow.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
         
     </head>
-    <style>
-        body{
-            font-family: 'Lato', sans-serif;
-        }
-        canvas {
-          padding: 0;
-          margin: auto;
-          display: block;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-        }
-        .image-detail-canvas {
-          -moz-user-select: none;
-          -webkit-user-select: none;
-          max-width: 100% !important;
-          max-height: 100% !important;
-        }
-
-        #front-anim {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform:translate(-50%, -50%);
-        }
-
-        #front-anim path:nth-child(1) {stroke-dasharray: 300;
-        stroke-dashoffset: 300;
-        animation: line-anim 1.5s ease forwards;
-        }
-        #front-anim path:nth-child(2) {stroke-dasharray: 375;
-        stroke-dashoffset: 375;
-        animation: line-anim 1.7s ease forwards;}
-        #front-anim path:nth-child(3) {stroke-dasharray: 159;
-        stroke-dashoffset: 159;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(4) {stroke-dasharray: 360;
-        stroke-dashoffset: 360;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(5) {stroke-dasharray: 345;
-        stroke-dashoffset: 345;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(6) {stroke-dasharray: 407;
-        stroke-dashoffset: 407;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(7) {stroke-dasharray: 246;
-        stroke-dashoffset: 246;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(8) {stroke-dasharray: 302;
-        stroke-dashoffset: 302;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(9) {stroke-dasharray: 345;
-        stroke-dashoffset: 345;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(10) {stroke-dasharray: 301;
-        stroke-dashoffset: 301;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(11) {stroke-dasharray: 335;
-        stroke-dashoffset: 335;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(12) {stroke-dasharray: 394;
-        stroke-dashoffset: 394;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(13) {stroke-dasharray: 341;
-        stroke-dashoffset: 341;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(14) {stroke-dasharray: 302;
-        stroke-dashoffset: 302;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(15) {stroke-dasharray: 345;
-        stroke-dashoffset: 345;
-        animation: line-anim 1.9s ease forwards;}
-        #front-anim path:nth-child(16) {stroke-dasharray: 407;
-        stroke-dashoffset: 407;
-        animation: line-anim 1.9s ease forwards;}
-
-        @keyframes line-anim {
-            to {
-                stroke-dashoffset: 0;
-            }
-        }
-    </style>
     <body id="page-top">
     	<script>
         new WOW().init();
@@ -117,17 +35,18 @@
                     <ul class="navbar-nav ml-auto ">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index#projects">Featured Projects</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index#signup">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./proj">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./proj">Projects</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" target="_blank" href="https://github.com/treecant">Github</a></li> 
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://blog.srikantv.com">Blog</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <header class="masthead" style="background-image: url('./assets/background.png')">
+        <header class="masthead" style="height: 100vh; background-image: url('./assets/background.png')">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center" >
-                    <svg id="front-anim" width="576" height="192" viewBox="0 0 576 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div>
+                    <svg id="front-anim" viewBox="0 0 576 192" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M137.098 15.304C136.778 15.848 136.442 16.248 136.09 16.504C135.738 16.76 135.29 16.888 134.746 16.888C134.17 16.888 133.514 16.632 132.778 16.12C132.042 15.576 131.114 14.984 129.994 14.344C128.906 13.672 127.594 13.08 126.058 12.568C124.522 12.024 122.682 11.752 120.538 11.752C118.522 11.752 116.746 12.024 115.21 12.568C113.706 13.08 112.442 13.8 111.418 14.728C110.394 15.624 109.61 16.696 109.066 17.944C108.554 19.16 108.298 20.488 108.298 21.928C108.298 23.784 108.762 25.32 109.69 26.536C110.65 27.752 111.898 28.792 113.434 29.656C114.97 30.52 116.714 31.272 118.666 31.912C120.618 32.552 122.618 33.224 124.666 33.928C126.714 34.6 128.714 35.384 130.666 36.28C132.618 37.176 134.362 38.312 135.898 39.688C137.434 41.032 138.666 42.696 139.594 44.68C140.554 46.632 141.034 49.032 141.034 51.88C141.034 54.92 140.506 57.768 139.45 60.424C138.426 63.08 136.921 65.4 134.938 67.384C132.953 69.368 130.506 70.936 127.594 72.088C124.714 73.208 121.434 73.768 117.754 73.768C115.546 73.768 113.402 73.544 111.322 73.096C109.242 72.68 107.274 72.088 105.418 71.32C103.562 70.52 101.818 69.576 100.186 68.488C98.5855 67.368 97.1455 66.12 95.8655 64.744L98.7935 59.848C99.0815 59.464 99.4175 59.144 99.8015 58.888C100.218 58.632 100.682 58.504 101.194 58.504C101.866 58.504 102.634 58.856 103.498 59.56C104.394 60.264 105.482 61.048 106.762 61.912C108.074 62.744 109.626 63.512 111.418 64.216C113.242 64.92 115.45 65.272 118.042 65.272C120.154 65.272 122.042 65 123.706 64.456C125.37 63.88 126.762 63.08 127.882 62.056C129.034 61 129.914 59.736 130.522 58.264C131.13 56.792 131.434 55.16 131.434 53.368C131.434 51.352 130.97 49.704 130.042 48.424C129.114 47.144 127.882 46.072 126.346 45.208C124.81 44.344 123.066 43.608 121.114 43C119.162 42.392 117.162 41.768 115.114 41.128C113.066 40.456 111.066 39.688 109.114 38.824C107.162 37.96 105.418 36.84 103.882 35.464C102.346 34.056 101.114 32.312 100.186 30.232C99.2575 28.12 98.7935 25.528 98.7935 22.456C98.7935 19.992 99.2735 17.608 100.234 15.304C101.194 13 102.586 10.968 104.41 9.208C106.266 7.416 108.538 5.992 111.226 4.936C113.914 3.848 116.986 3.304 120.442 3.304C124.314 3.304 127.866 3.928 131.098 5.176C134.362 6.392 137.194 8.15199 139.594 10.456L137.098 15.304Z" stroke="white" stroke-width="3" mask="url(#path-1-outside-1)"/>
                             <path d="M173.188 37.288C175.812 37.288 178.116 36.968 180.1 36.328C182.116 35.688 183.796 34.792 185.14 33.64C186.484 32.456 187.492 31.064 188.164 29.464C188.836 27.832 189.172 26.04 189.172 24.088C189.172 20.12 187.86 17.128 185.236 15.112C182.644 13.096 178.74 12.088 173.524 12.088H163.876V37.288H173.188ZM205.348 73H196.228C194.404 73 193.076 72.28 192.244 70.84L175.204 46.936C174.66 46.136 174.068 45.576 173.428 45.256C172.788 44.904 171.828 44.728 170.548 44.728H163.876V73H153.652V4.072H173.524C177.972 4.072 181.796 4.536 184.996 5.464C188.228 6.36 190.884 7.656 192.964 9.352C195.076 11.016 196.628 13.032 197.62 15.4C198.644 17.768 199.156 20.424 199.156 23.368C199.156 25.768 198.788 28.024 198.052 30.136C197.316 32.248 196.228 34.152 194.788 35.848C193.38 37.512 191.652 38.952 189.604 40.168C187.556 41.384 185.236 42.312 182.644 42.952C183.924 43.72 185.028 44.792 185.956 46.168L205.348 73Z" stroke="white" stroke-width="3" mask="url(#path-1-outside-1)"/>
                             <path d="M224.487 73H214.215V4.072H224.487V73Z" stroke="white" stroke-width="3" mask="url(#path-1-outside-1)"/>
@@ -145,11 +64,22 @@
                             <path d="M487.276 162.32L477.052 135.584C476.316 133.76 475.58 131.456 474.844 128.672C474.492 130.048 474.124 131.328 473.74 132.512C473.388 133.696 473.036 134.752 472.684 135.68L462.508 162.32H487.276ZM507.484 188H499.612C498.716 188 497.98 187.776 497.404 187.328C496.828 186.88 496.412 186.304 496.156 185.6L490.06 169.616H459.676L453.58 185.6C453.356 186.208 452.94 186.768 452.332 187.28C451.724 187.76 450.988 188 450.124 188H442.252L469.708 119.072H480.028L507.484 188Z" stroke="white" stroke-width="3" mask="url(#path-1-outside-1)"/>
                             <path d="M572.538 119.072V188H567.354C566.554 188 565.882 187.856 565.338 187.568C564.826 187.28 564.298 186.816 563.754 186.176L524.826 135.824C524.89 136.688 524.938 137.536 524.97 138.368C525.034 139.2 525.066 139.984 525.066 140.72V188H516.09V119.072H521.37C522.266 119.072 522.938 119.184 523.386 119.408C523.834 119.6 524.33 120.064 524.874 120.8L563.898 171.2C563.802 170.272 563.722 169.376 563.658 168.512C563.626 167.616 563.61 166.784 563.61 166.016V119.072H572.538Z" stroke="white" stroke-width="3" mask="url(#path-1-outside-1)"/>
                     </svg>
-
+                    </div>
                 </div>
             </div>
+            <h4>
         </header>
+        <div class="container">
+                <div class='row justify-content-center'>
+                    <div class="card">
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <section class="projects-section bg-light" id="projects">
+            
             <div class="container">
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                     <div class="col-lg-6">
@@ -202,11 +132,5 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <script src="js/scripts.js"></script>
-        <script>
-                const logo = document.querySelectorAll("#front-anim path");
-                for(var i = 0; i < logo.length; i++) {
-                    console.log(`#front-anim path:nth-child(${i+1}) {stroke-dasharray: ${logo[i].getTotalLength()}px;}`);
-                }
-        </script>
     </body>
 </html>

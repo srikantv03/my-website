@@ -38,7 +38,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index#projects">Featured Projects</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index#signup">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./proj">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./proj">Projects</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" target="_blank" href="https://github.com/treecant">Github</a></li> 
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="http://blog.srikantv.com">Blog</a></li>
                   </ul>
