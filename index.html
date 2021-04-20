@@ -15,21 +15,17 @@
 
         <link href="css/styles.css" rel="stylesheet" />
 
-        <link
-    	rel="stylesheet"
-    	href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  		/>
-		<script src="js/wow.min.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
         
     </head>
     <body id="page-top">
-    	<script>
-        new WOW().init();
-        </script>
+    	
 
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container animate__animated animate__fadeIn animate__delay-2s">
+            <div class="container wow fadeIn">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">Srikant Vasudevan</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Navigation</button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto ">
@@ -67,58 +63,48 @@
                     </div>
                 </div>
             </div>
-            <h4>
         </header>
-        <div class="container">
-                <div class='row justify-content-center'>
-                    <div class="card">
-                        <div class="progress">
-                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         <section class="projects-section bg-light" id="projects">
-            
-            <div class="container">
                 <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                     <div class="col-lg-6">
-                        <canvas id="taskit" style="width: 100%"/>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Data Science Research on Educational Funding</h4>
-                                    <p class="mb-0 text-white-50">This was my final project for my Data Science course at the North Carolina School of Science and Mathematics's online program. Most of the graphics and models were created using the programming language R, and the report was written and compiled in LaTeX. This topic was interesting to me as there are major discrepancies with local and state funding for government funded educational institutions, and I wanted to see if the reasons lied in the statistics of each state.</p>
-                                    <hr class="d-none d-lg-block mb-0 ml-0" />
-                                    <br>
-                                    <p class="mb-0 text-white-50">View "Portfolio" tab for more info.</p>
+                        <div data-aos="fade-down" data-aos-duration="1000" class="card shadow p-3" style="border: none">
+                            <h5 class="card-header text-center">MY SKILLS</h5>
+                            <div class='card-body'>
+                                <p>HTML5</p>
+                                <div class="holder">
+                                    <div data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000" class="html-bar"></div>
                                 </div>
+                                <br>
+                                <p>CSS5</p>
+                                <div class="holder">
+                                    <div data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000" class="css-bar"></div>
+                                </div>
+                                <br>
+                                <p>JS</p>
+                                <div class="holder">
+                                    <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" class="js-bar"></div>
+                                </div>
+                                <br>
+                                <p>PHP</p>
+                                <div class="holder">
+                                    <div data-aos="fade-right" data-aos-delay="1200" data-aos-duration="1000" class="php-bar"></div>
+                                </div>
+                                <br>
+                                <p>Java</p>
+                                <div class="holder">
+                                    <div data-aos="fade-right" data-aos-delay="1400" data-aos-duration="1000" class="java-bar"></div>
+                                </div>
+                                <br>
+                                <p>Python</p>
+                                <div class="holder">
+                                    <div data-aos="fade-right" data-aos-delay="1600" data-aos-duration="1000" class="python-bar"></div>
+                                </div>
+                                <br>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6">
-                            <canvas id="hydantoin" style="width: 100%"/>
-                    </div>
-                    <script src="scroll.js"></script>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Applications of Hydantoin as a Photoswitch</h4>
-                                    <p class="mb-0 text-white-50">This was one of the summative research papers for my Nanotechnology and Research course at the North Carolina School of Science and Mathematics's online program. This research paper included individual research on the properties of hydantoin as well as a "guided estimate" in which I was tasked to predict the properties of a prospective molecule, which I would then use the NCSSM computational chemistry server to calculate.</p>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                                    <br>
-                                    <p class="mb-0 text-white-50">View "Portfolio" tab for more info.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         <section class="contact-section bg-black" id="signup">
             <div class="container">
@@ -132,5 +118,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <script src="js/scripts.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

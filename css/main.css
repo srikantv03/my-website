@@ -128,3 +128,43 @@ canvas {
         stroke-dashoffset: 0;
     }
 }
+
+.holder {
+   height: 12px;
+   background: #fefefe;
+   border-radius: 20px;
+   overflow: hidden;
+   box-shadow: inset 0px 0px 2px rgba(0,0,0,0.2);
+}
+
+.html-bar {
+   width: 90%;
+   background: #e34c26;
+   height: 100%;
+}
+
+.css-bar {
+   width: 90%;
+   background: #2965f1;
+   height: 100%;
+}
+.js-bar {
+   width: 75%;
+   background: #F0DB4F;
+   height: 100%;
+}
+.php-bar {
+   width: 70%;
+   background: #474A8A;
+   height: 100%;
+}
+.java-bar {
+   width: 75%;
+   background: #f89820;
+   height: 100%;
+}
+.python-bar {
+   width: 77%;
+   background: #306998;
+   height: 100%;
+}
