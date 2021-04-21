@@ -168,3 +168,10 @@ canvas {
    background: #306998;
    height: 100%;
 }
+
+.gt-icon {
+  background-image: url('./../assets/gtlogo.svg');
+  height: 100px;
+  width: 100px;
+  display: inline;
+}
