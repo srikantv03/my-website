@@ -11,7 +11,8 @@
 
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link href="css/styles.css" rel="stylesheet" />
         <link
         rel="stylesheet"
@@ -36,7 +37,6 @@
                 <a class="navbar-brand js-scroll-trigger" href="./index#page-top">Srikant Vasudevan</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Navigation</button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index#projects">Featured Projects</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./index#signup">Contact</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./proj">Projects</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" target="_blank" href="https://github.com/treecant">Github</a></li> 
@@ -108,7 +108,7 @@
 
             ?>
                     <br>
-                    <div class='card' style='width:70%; padding: 10px;'>
+                    <div data-aos="fade-down" data-aos-duration="1000" class='card' style='width:70%; padding: 10px;'>
                         <img class='card-img-top img-style' src= <?php echo $path; ?> alt='Card image'>
                         <div class='card-body'>
                             <h4 class='card-title'><?php echo $name; ?></h4>
@@ -124,6 +124,8 @@
 
             <footer class="footer bg-black small text-center text-white-50"><div class="container">Srikant Vasudevan 2020</div></footer>
         </center>
-
+    <script>
+            AOS.init();
+    </script>
     </body>
 </html>
