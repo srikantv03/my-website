@@ -81,6 +81,7 @@
             } 
         </script>
         <center>
+            <div class="row m-0 d-flex align-items-stretch" style="padding: 50px">
             <?php
 
                 //get environment variables
@@ -108,12 +109,14 @@
 
             ?>
                     <br>
-                    <div data-aos="fade-down" data-aos-duration="1000" class='card' style='width:70%; padding: 10px;'>
-                        <img class='card-img-top img-style' src= <?php echo $path; ?> alt='Card image'>
-                        <div class='card-body'>
-                            <h4 class='card-title'><?php echo $name; ?></h4>
-                            <p class='card-text'><?php echo $des ?></p>
-                            <button id = <?php echo $x; ?> class='btn btn-primary' onclick='createCookie("id", this.id, 100)'>View Project</button>
+                    <div class="col-lg-6 p-3">
+                        <div data-aos="fade-down" data-aos-duration="1000" class='card h-100'>
+                            <img class='card-img-top img-style' src= <?php echo $path; ?> alt='Card image'>
+                            <div class='card-body'>
+                                <h4 class='card-title p-3'><?php echo $name; ?></h4>
+                                <p class='card-text'><?php echo $des ?></p>
+                                <button id = <?php echo $x; ?> class='btn btn-primary' onclick='createCookie("id", this.id, 100)'>View Project</button>
+                            </div>
                         </div>
                     </div>
                     <br>
@@ -121,6 +124,7 @@
             <?php        
                 }
             ?>
+            </div>
 
             <footer class="footer bg-black small text-center text-white-50"><div class="container">Srikant Vasudevan 2020</div></footer>
         </center>
